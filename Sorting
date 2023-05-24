@@ -1,0 +1,11 @@
+def custom_sort(numbers):
+    n = len(numbers)
+    for i in range(n-1):
+        for j in range(n-1-i):
+            if num[j] > num[j+1]:
+                num[j], num[j+1] = num[j+1], num[j]
+    return num
+
+num = [5,2,8,1,3]
+sorted_numbers = custom_sort(num)
+print(sorted_numbers)
